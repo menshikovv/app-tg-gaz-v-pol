@@ -8,20 +8,19 @@ export const Textarea = ({ value, setText }: TextareaProps) => {
   const handleBlur = () => setIsFocused(false);
 
   return (
-    <div className={s.textareaContainer}>
+    <div className={`${s.textareaContainer} ${isFocused ? s.focused : ''}`}>
       <textarea
-          value={value}
-          onChange={(e) => setText(e.target.value)}
-          onFocus={handleFocus}
-          onBlur={handleBlur}
-          className={s.textarea}
-          placeholder="Напишите ваше предложение..."
-          rows={4}
-        />
+        value={value}
+        onChange={(e) => setText(e.target.value)}
+        onFocus={handleFocus}
+        onBlur={handleBlur}
+        className={s.textarea}
+        placeholder="Напишите ваше предложение..."
+        rows={4}
+      />
     </div>
   );
 };
-
 
 interface TextareaProps {
   value: string;
