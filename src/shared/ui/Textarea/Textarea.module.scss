@@ -1,0 +1,32 @@
+.textareaContainer {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+
+  &.focused {
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+  }
+}
+
+.textarea {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  resize: vertical;
+  background: transparent;
+  transition: all 0.3s ease;
+
+  &::placeholder {
+    color: #999;
+    transition: all 0.3s ease;
+  }
+
+  &:focus::placeholder {
+    opacity: 0.5;
+  }
+}

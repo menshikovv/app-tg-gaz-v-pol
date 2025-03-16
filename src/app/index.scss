@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  color: white;
+  background-color: black;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.wrapper {
+  max-width: 1300px;
+  margin: 0px auto;
+  padding: 50px 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+label {
+  color: white !important;
+}
+
+input {
+  color: white !important;
+}
+
+code {
+  border: 1px solid grey;
+  border-radius: 30px;
+}
+
+.bg-default-100 {
+  background-color: rgba(50, 49, 49, 0.327) !important;
+}
+
+.ant-message-notice-content {
+  background-color: rgba(0, 0, 0, 0.803) !important;
+  color: white;
+  font-weight: 700;
+}
+
+textarea {
+  color: white !important;
+}
+
+section {
+  background-color: rgb(24, 24, 24) !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
