@@ -12,7 +12,7 @@ export const App = () => {
   return (
 
     <Routes>
-        <Route path={ROUTES.CABINET} element={<Cabinet />} />
+        <Route path="/" element={<Cabinet />} />
         <Route path={ROUTES.PASS} element={<Pass />} />
         <Route path={ROUTES.PROMO} element={<Promo />} />
         <Route path={ROUTES.REF} element={<Ref />} />
