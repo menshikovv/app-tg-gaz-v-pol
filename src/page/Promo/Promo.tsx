@@ -32,7 +32,7 @@ export const Promo = () => {
         tg.BackButton.onClick(() => {
             navigate(-1)
         })
-    }, [])
+    }, [navigate])
 
     return (
         <div className='wrapper'>
