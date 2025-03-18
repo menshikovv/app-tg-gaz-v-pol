@@ -7,7 +7,6 @@ import { useNavigate } from 'react-router-dom';
 
 export const Promo = () => {
     const [messageApi, contextHolder] = message.useMessage();
-    const [text, setText] = useState<string>("");
     const [isLoading, setIsLoading] = useState<boolean>(false);
     const navigate = useNavigate();
 
@@ -22,7 +21,6 @@ export const Promo = () => {
             duration: 1,
         });
 
-        setText('');
 
         setTimeout(() => {
             setIsLoading(false);
