@@ -49,3 +49,16 @@ section {
   justify-content: center;
   align-items: center;
 }
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.wrapper {
+  max-width: 1300px;
+  margin: 0px auto;
+  padding: 50px 20px;
+  width: 100%;
+  box-sizing: border-box;
+}

@@ -4,11 +4,8 @@
   max-width: 500px;
   transition: border-color 0.3s ease, box-shadow 0.3s ease;
   overflow: hidden;
-
-  &.focused {
-    border-color: #007bff;
-    box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
-  }
+  box-shadow: 0 4px 15px rgba(94, 102, 111, 0.585);
+  border-radius: 10px;
 }
 
 .textarea {

@@ -1,0 +1,17 @@
+.nick {
+    text-align: center;
+    font-size: 30px;
+}
+
+.input {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 1300px;
+    margin: 0px auto;
+    padding: 50px 20px;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    height: 40vh;
+}
