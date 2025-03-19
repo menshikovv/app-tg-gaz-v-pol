@@ -18,7 +18,7 @@
   }
   
   .inputContainer input:focus {
-    border-bottom-color: #6200ea;
+    border-bottom-color: #323232;
   }
   
   .placeholder {
@@ -34,7 +34,7 @@
   .inputContainer.focused .placeholder {
     top: -10px;
     font-size: 12px;
-    color: #6200ea;
+    color: #323232;
   }
   
   .inputContainer::after {
@@ -44,7 +44,7 @@
     left: 0;
     width: 100%;
     height: 2px;
-    background-color: #6200ea;
+    background-color: #323232;
     transform: scaleX(0);
     transition: transform 0.3s ease;
   }

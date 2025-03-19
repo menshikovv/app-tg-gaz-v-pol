@@ -5,31 +5,25 @@ interface AnimatedInputProps {
   placeholder: string;
   type?: string;
   onChange?: (value: string) => void;
+  value?: string
 }
 
-export const Input: React.FC<AnimatedInputProps> = ({
+export const Input = ({
   placeholder,
   type = 'text',
   onChange,
-}) => {
-  const [value, setValue] = useState('');
+  value,
+}: AnimatedInputProps) => {
   const [isFocused, setIsFocused] = useState(false);
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setValue(e.target.value);
-    if (onChange) {
-      onChange(e.target.value);
-    }
-  };
 
   return (
     <div className={`${s.inputContainer} ${ isFocused || value ? s.focused : ''}`}>
       <input
         type={type}
         value={value}
-        onChange={handleChange}
         onFocus={() => setIsFocused(true)}
         onBlur={() => setIsFocused(false)}
+        onChange={(e) => onChange && onChange(e.target.value)}
         placeholder={placeholder}
         required
       />

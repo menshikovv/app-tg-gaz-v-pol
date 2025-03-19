@@ -8,6 +8,7 @@ import { useNavigate } from 'react-router-dom';
 export const Promo = () => {
     const [messageApi, contextHolder] = message.useMessage();
     const [isLoading, setIsLoading] = useState<boolean>(false);
+    const [text, setText] = useState<string>('');
     const navigate = useNavigate();
 
     const success = () => {
@@ -21,6 +22,7 @@ export const Promo = () => {
             duration: 1,
         });
 
+        setText('')
 
         setTimeout(() => {
             setIsLoading(false);
@@ -39,7 +41,7 @@ export const Promo = () => {
             {contextHolder}
             <h1 className={s.nick}>ПРОМОКОД</h1>
             <div className={s.input}>
-                <Input placeholder='Введите промокод'/>
+                <Input placeholder='Введите промокод' value={text} onChange={(e) => setText(e)}/>
                 <Button onClick={success}>
                     {isLoading ? 'Подождите...' : 'Активировать'}
                 </Button>
