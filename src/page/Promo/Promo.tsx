@@ -23,18 +23,18 @@ export const Promo = () => {
         });
 
         setText('')
-
-        setTimeout(() => {
-            setIsLoading(false);
-        }, 1000);
-    };
-
     useEffect(() => {
         tg.BackButton.show();
         tg.BackButton.onClick(() => {
             navigate(-1)
         })
     }, [])
+        setTimeout(() => {
+            setIsLoading(false);
+        }, 1000);
+    };
+
+    
 
     return (
         <div className='wrapper'>
