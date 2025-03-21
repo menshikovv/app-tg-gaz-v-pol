@@ -27,10 +27,12 @@ export const Connection = () => {
     };
     
     return (
-        <div className={s.wrapper}>
-            {contextHolder}
-            <Textarea value={text} setText={setText} />
-            <Button onClick={success}>Активировать</Button>
+        <div className={s.container}>
+            <div className={s.wrapper}>
+                {contextHolder}
+                <Textarea value={text} setText={setText} />
+                <Button onClick={success}>Активировать</Button>
+            </div>
         </div>
     );
 }

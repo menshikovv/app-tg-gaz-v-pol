@@ -23,7 +23,9 @@ export const Cabinet = () => {
                 <div style={{display: 'flex', justifyContent: 'center', marginTop: 5}}>
                     <Taba selectedTab={selectedTab} onTabChange={setSelectedTab} />
                 </div>
-                {tabContent[selectedTab]}
+                <div className={s.tab_content}>
+                    {tabContent[selectedTab]}
+                </div>
             </div>
             <Footer />
         </div>

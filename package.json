@@ -13,11 +13,6 @@
     "deploy": "gh-pages -d build"
   },
   "dependencies": {
-    "@heroui/avatar": "^2.2.12",
-    "@heroui/input": "^2.4.16",
-    "@heroui/modal": "^2.2.13",
-    "@heroui/system": "^2.4.12",
-    "@heroui/theme": "^2.4.12",
     "antd": "^5.24.3",
     "framer-motion": "^12.5.0",
     "react": "^19.0.0",
