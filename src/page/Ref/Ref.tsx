@@ -30,12 +30,9 @@ export const Ref = () => {
         tg.BackButton.show();
         tg.BackButton.onClick(() => {
             navigate(-1)
-        })
-
-        return () => {
             tg.BackButton.hide()
-        }
-    }, [navigate])
+        })
+    }, [])
     
     return (
         <div className='wrapper'>
