@@ -20,7 +20,7 @@ export const Cabinet = () => {
                     <Pass />
                     <Coin />
                 </div>
-                <div style={{display: 'flex', justifyContent: 'center', marginTop: 5}}>
+                <div style={{display: 'flex', justifyContent: 'center'}}>
                     <Taba selectedTab={selectedTab} onTabChange={setSelectedTab} />
                 </div>
                 <div className={s.tab_content}>
