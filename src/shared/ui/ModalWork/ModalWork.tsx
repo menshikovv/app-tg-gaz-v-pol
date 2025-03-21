@@ -8,7 +8,7 @@ interface ModalWorkProps {
 
 export const ModalWork = ({ isOpen, onClose }: ModalWorkProps) => {
   const [isVisible, setIsVisible] = useState(false);
-
+  
   useEffect(() => {
     if (isOpen) {
       setIsVisible(true);

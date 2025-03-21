@@ -1,8 +1,7 @@
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import { Header, Coin, Pass, Taba, TabKey, Footer } from '../../widgets/Cabinet'
 import s from './Cabinet.module.scss'
 import { Clan, Connection, Other } from '../../components'
-import { tg } from '../../shared/lib/telegram'
 
 export const Cabinet = () => {
     const [selectedTab, setSelectedTab] = useState<'others' | 'connection' | 'clan'>('others')
@@ -13,10 +12,6 @@ export const Cabinet = () => {
         connection: <Connection />
     }
 
-    useEffect(() => {
-        tg.BackButton.hide()
-    }, [])
-    
     return (
         <div className={s.wrapper}>
             <Header />
